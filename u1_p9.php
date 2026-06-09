@@ -7,12 +7,29 @@
 </head>
 <body>
     <?php
-        $num=array(1,2,3,4,5,6,7,8,9,10);
+    /*error_reporting(0);*/
+    ?>
+    <form method="get">
+        <input type="text" name="uname1">
+        <input type="text" name="uname2">
+        <input type="text" name="uname3">
+        <input type="text" name="uname4">
+        <input type="text" name="uname5">
+        <input type="submit" name="submit" value="submit">
+    </form>
+    <?php
+        $nm=array();
+        $nm[0]=$_GET['uname1'];
+        $nm[1]=$_GET['uname2'];
+        $nm[2]=$_GET['uname3'];
+        $nm[3]=$_GET['uname4'];
+        $nm[4]=$_GET['uname5'];
+     
         $n=array_reverse($num);
         foreach($n as $a)
         {
             echo $a."<br>";
-        }
+         }
     ?>
 </body>
 </html>
